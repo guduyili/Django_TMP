@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>信息页面</title>
+</head>
+<body>
+    <h1>{{ username }}</h1>
+    <h2>{{ book.name }} 的昵称是：{{ book.xndx }}</h2>
+    <h2>{{Genshin.114}}</h2>
+    <p>{{ person.realname}}</p>
+    <p>{{xnm.1}}</p>
+    <ul>
+        <!-- {% for item in xnm %} 和 {% endfor %} 
+        用于遍历列表中的每个元素，并访问元素中的键值对。 -->
+        {% for item in xnm %}
+            <li>{{ item.name }} 的昵称是：{{ item.xndx }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
